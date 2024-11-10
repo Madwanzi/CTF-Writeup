@@ -1,1 +1,66 @@
 
+AlgebrarbeglA
+100
+78! - k = k - !87
+
+Solve for k flag format is udctf{k}
+
+-ProfNinja
+
+Dedicated to Wrath of Math
+
+
+I have tried to perform the math in a calculator. Math error is all I see.
+
+ wrote the code
+
+I first had to work out with what I knew which is the factorial of 78 (78!)
+
+I did not know of !87. This brought about syntax error.
+
+Did a little bit of google search on this
+https://en.wikipedia.org/wiki/Glossary_of_mathematical_symbols 
+
+ stumbled apon this for the !87
+ https://en.wikipedia.org/wiki/Subfactorial 
+
+Put together some code. 
+AlgebrarbeglA.py
+
+
+
+
+import math
+
+factorial_78 = math.factorial(78)
+print(factorial_78)
+
+def subfactorial(n, memo={}):
+    if n == 0:
+        return 1
+    elif n == 1:
+        return 0
+
+    # Check if the value has already been computed
+   
+
+ if n in memo:
+        return memo[n]
+
+    memo[n] = (n - 1) * (subfactorial(n - 1, memo) + subfactorial(n - 2, memo))
+
+    return memo[n]
+
+subfactorial_87 = subfactorial(87)
+print(subfactorial_87)
+
+
+k = (factorial_78 + subfactorial_87) // 2
+print()
+print(f"udctf{{{k}}}")
+
+
+
+and boom the flag
+
+udctf{387700288526444839185460979130991103610316350951544192244807199359099600806691328655309595021094080317314686982970896828895806969367}
