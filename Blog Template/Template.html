@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueHens CTF 2024 Writeup</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="UDCTF-logo.png" alt="bluehens-ctf-2024" class="logo">
+        
+    </header>
+    <!-- Sidebar for Table of Contents -->
+        <aside class="sidebar" id="sidebar">
+                       <nav class="toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#osint">OSINT</a></li>
+                    <li><a href="#crypto">CRYPTO</a></li>
+                    <li><a href="#forensics">FORENSICS</a></li>
+                    <li><a href="#pwn">PWN</a></li>
+                    <li><a href="#reversing">REVERSING</a></li>
+                    <li><a href="#misc">MISC</a></li>
+                </ul>
+            </nav>
+        </aside>
+    <div class="container-button">
+         <button class="toggle-button" id="side_button" onclick="toggleSidebar()">☰ </button>
+    </div>
+    <div class="container">
+        
+
+        <!-- Main Content -->
+        <main class="content" id="content">
+            <section class="challenge-files">
+                <h2>Challenge Files</h2>
+            </section>
+
+            <!-- OSINT Section -->
+            <section class="challenges" id="osint">
+                <h2>OSINT</h2>
+                <div class="challenge-item">
+                    <h3>Intro to OSINT</h3>
+                    <p><strong>Challenge Description:</strong> A famous person is selling their house...</p>
+                    <h4>Solve:</h4>
+                    <p>I started by reverse image searching...</p>
+                    <pre><code>udctf{marcecko_licenseplate}</code></pre>
+                </div>
+            </section>
+
+            <!-- CRYPTO Section -->
+            <section class="challenges" id="crypto">
+                <h2>CRYPTO</h2>
+                <div class="challenge-item">
+                    <h3>Intro to RSA</h3>
+                    <p><strong>Challenge Description:</strong> Basic RSA encryption...</p>
+                    <h4>Solve:</h4>
+                    <p>I used Python to factorize...</p>
+                    <pre><code>udctf{rsa_key_cracked}</code></pre>
+                </div>
+            </section>
+
+            <!-- FORENSICS Section -->
+            <section class="challenges" id="forensics">
+                <h2>FORENSICS</h2>
+                <div class="challenge-item">
+                    <h3>Hidden Data Extraction</h3>
+                    <p><strong>Challenge Description:</strong> Steganography in an image...</p>
+                    <h4>Solve:</h4>
+                    <p>I used steghide to extract hidden information...</p>
+                    <pre><code>udctf{stego_found}</code></pre>
+                </div>
+            </section>
+
+            <!-- PWN Section -->
+            <section class="challenges" id="pwn">
+                <h2>PWN</h2>
+                <div class="challenge-item">
+                    <h3>Buffer Overflow</h3>
+                    <p><strong>Challenge Description:</strong> Exploit a classic buffer overflow vulnerability...</p>
+                    <h4>Solve:</h4>
+                    <p>I used GDB to analyze...</p>
+                    <pre><code>udctf{buffer_overflow}</code></pre>
+                </div>
+            </section>
+
+            <!-- REVERSING Section -->
+            <section class="challenges" id="reversing">
+                <h2>REVERSING</h2>
+                <div class="challenge-item">
+                    <h3>Simple Flag Checker</h3>
+                    <p><strong>Challenge Description:</strong> Analyze binary to retrieve the flag...</p>
+                    <h4>Solve:</h4>
+                    <p>I used Ghidra to reverse-engineer...</p>
+                    <pre><code>udctf{reversed_flag}</code></pre>
+                </div>
+            </section>
+
+            <!-- MISC Section -->
+            <section class="challenges" id="misc">
+                <h2>MISC</h2>
+                <div class="challenge-item">
+                    <h3>Fun Puzzle</h3>
+                    <p><strong>Challenge Description:</strong> Solve a creative puzzle...</p>
+                    <h4>Solve:</h4>
+                    <p>I approached the problem by...</p>
+                    <pre><code>udctf{puzzle_solved}</code></pre>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BlueHens CTF Writeup</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
